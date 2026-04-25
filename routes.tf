@@ -8,10 +8,9 @@ resource "aws_route_table" "privateroute" {
 
   tags = {
     Name   = "private Route table"
-    "contct" = "Emmanuel Sedas"
-    "app"    = "Emmanuel'VPC-demo"
-    "env"    = "test"
-    "elcid"  = "itclarch"
+ "contct" = "owner"
+    "app"    = "owner's VPC"
+    "env"    = "test" 
   }
 }
 
@@ -25,10 +24,9 @@ resource "aws_route_table" "publicroute" {
 
   tags = {
     Name     = "public route table"
-    "contct" = "Emmanuel Sedas"
-    "app"    = "Emmanuel'VPC-demo"
+     "contct" = "owner"
+    "app"    = "owner's VPC"
     "env"    = "test"
-    "elcid"  = "itclarch"
   }
 }
 
