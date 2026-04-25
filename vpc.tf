@@ -5,10 +5,9 @@ resource "aws_vpc" "mycustomvpc" {
   
 
   tags = {
-    "contct" = "Emmanuel Sedas"
-    "app"    = "Emmanuel'VPC-demo"
+    "contct" = "owner"
+    "app"    = "owner's VPC"
     "env"    = "test"
-    "elcid"  = "itclarch"
-    Name = "Emmanuel'VPC-demo"
+     Name = "Owners' VPC-demo"
   }
 }
