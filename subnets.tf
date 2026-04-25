@@ -7,9 +7,9 @@ resource "aws_subnet" "public_1" {
 
   tags = {
     Name    = "public-subnet-2a"
-    contact = "Emmanuel Sedas"
-    app     = "Emmanuel'svpc-test"
-    elcid   = "itclarch"
+    "contct" = "owner"
+    "app"    = "owner's VPC"
+    "env"    = "test"
   }
 }
 
@@ -21,9 +21,9 @@ resource "aws_subnet" "public_2" {
 
   tags = {
     Name    = "public-subnet-2b"
-    contact = "Emmanuel Sedas"
-    app     = "Emmanuel'svpc-test"
-    elcid   = "itclarch"
+    "contct" = "owner"
+    "app"    = "owner's VPC"
+    "env"    = "test"
   }
 }
 
@@ -35,9 +35,9 @@ resource "aws_subnet" "private_1" {
 
   tags = {
     Name    = "private-subnet-2a"
-    contact = "Emmanuel Sedas"
-    app     = "Emmanuel'svpc-test"
-    elcid   = "itclarch"
+    "contct" = "owner"
+    "app"    = "owner's VPC"
+    "env"    = "test"
   }
 }
 
@@ -48,8 +48,8 @@ resource "aws_subnet" "private_2" {
 
   tags = {
     Name    = "private-subnet-2b"
-    contact = "Emmanuel Sedas"
-    app     = "Emmanuel'svpc-test"
-    elcid   = "itclarch"
+    "contct" = "owner"
+    "app"    = "owner's VPC"
+    "env"    = "test"
   }
 }
