@@ -20,5 +20,5 @@ terraform {
 # Configure region and profile
 provider "aws" {
   region  = var.aws_region
-  profile = "cloudsol"
+  profile = "profile name"  
 }
