@@ -3,10 +3,9 @@ resource "aws_eip" "nat" {
   depends_on = [aws_internet_gateway.igw]
   
   tags = {
-    "contct" = "Emmanuel Sedas"
-    "app"    = "Emmanuel'VPC-demo"
+    "contct" = "owner"
+    "app"    = "owner's VPC"
     "env"    = "test"
-    "elcid"  = "itclarch"
   }
 
 }
@@ -16,11 +15,10 @@ resource "aws_nat_gateway" "nat" {
   subnet_id     = aws_subnet.public_1.id
   
   tags = {
-    "contct" = "Emmanuel Sedas"
-    "app"    = "Emmanuel'VPC-demo"
+    "contct" = "owner"
+    "app"    = "owner's VPC"
     "env"    = "test"
-    "elcid"  = "itclarch"
-    Name = "Emmanuel'VPC-demo-NAT"
+    Name = "Owners'VPC-demo-NAT"
   }
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
